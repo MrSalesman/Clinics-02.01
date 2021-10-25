@@ -25,3 +25,5 @@ namespace Clinics
         }
     }
 }
+
+//Нигеры
