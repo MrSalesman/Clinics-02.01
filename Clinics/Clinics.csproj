@@ -73,6 +73,9 @@
     <Compile Include="Windows\StaffAuthWindow.xaml.cs">
       <DependentUpon>StaffAuthWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\StaffDoctor.xaml.cs">
+      <DependentUpon>StaffDoctor.xaml</DependentUpon>
+    </Compile>
     <Page Include="Windows\AuthWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -98,6 +101,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\StaffAuthWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\StaffDoctor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

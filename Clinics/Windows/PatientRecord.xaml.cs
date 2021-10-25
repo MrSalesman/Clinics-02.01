@@ -24,5 +24,10 @@ namespace Clinics.Windows
         {
             InitializeComponent();
         }
+
+        private void bntPRExit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

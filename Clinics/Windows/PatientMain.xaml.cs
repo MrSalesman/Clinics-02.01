@@ -48,5 +48,10 @@ namespace Clinics.Windows
         {
 
         }
+
+        private void btnPMExit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

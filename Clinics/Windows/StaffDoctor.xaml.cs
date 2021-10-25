@@ -12,17 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Clinics
+namespace Clinics.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для PatientPage.xaml
+    /// Логика взаимодействия для StaffDoctor.xaml
     /// </summary>
-    public partial class PatientPage : Window
+    public partial class StaffDoctor : Window
     {
-        public PatientPage()
+        public StaffDoctor()
         {
             InitializeComponent();
         }
     }
 }
-

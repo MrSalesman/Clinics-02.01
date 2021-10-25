@@ -44,6 +44,14 @@
                     FontSize="14"
                     Click="btnMedicalCard_Click"
                     BorderThickness="0"/>
+            <Button x:Name="bntPRExit"
+                    Height="30"
+                    Background="#FF58C755"
+                    Foreground="White"
+                    Content="Выйти из профиля"
+                    FontSize="14"
+                    Click="bntPRExit_Click"
+                    BorderThickness="0"/>
             <!--#FF58C755-->
         </StackPanel>
 

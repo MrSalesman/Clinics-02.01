@@ -19,13 +19,21 @@
             <RowDefinition Height="80"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-
-        <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Margin="333.556,21.333,107.889,24.667" Width="299" BorderBrush="#FF58C755" BorderThickness="1.5"/>
-        <TextBlock Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="182"  Height="34" Text="Введите логин:" FontSize="24" Margin="146.556,21.333,411.889,24.667" Foreground="#FF58C755"/>
-
-        <TextBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Margin="333.556,21.333,107.889,24.667" Width="299" BorderBrush="#FF58C755" BorderThickness="1.5"/>
-        <TextBlock Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="182"  Height="34" Text="Введите пароль:" FontSize="24" Margin="146.556,21.333,411.889,24.667" Foreground="#FF58C755"/>
-
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Width="182"  Height="34" Text="Введите логин:" FontSize="24" Foreground="#FF58C755"/>
+            <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Width="299" BorderBrush="#FF58C755" BorderThickness="1.5"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Orientation="Horizontal">
+            <TextBlock Width="182"  
+                       Height="34" 
+                       Text="Введите пароль:" 
+                       FontSize="24" 
+                       Foreground="#FF58C755"/>
+            <TextBox FontSize="24" 
+                     Width="299" 
+                     BorderBrush="#FF58C755" 
+                     BorderThickness="1.5"/>
+        </StackPanel>
         <Button x:Name="btnAuthBack" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Назад"  Width="140" Background="White" Foreground="#FF58C755" BorderBrush="#FF58C755" Height="27" FontSize="14"/>
 
         <Button x:Name="btnAurhEnter"
@@ -46,7 +54,7 @@
                    HorizontalAlignment="Center"
                    FontSize="24"
                    Foreground="#FF58C755"
-            Text="Авторизация"/>
+            Text="Авторизация в качестве сотрудника"/>
         <Image Grid.Column="1" 
                Grid.Row="4" 
                VerticalAlignment="Bottom"
