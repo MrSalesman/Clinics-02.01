@@ -1,11 +1,13 @@
-﻿<Window x:Class="Clinics.Windows.PatientMain"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Clinics.Windows"
-        mc:Ignorable="d"
-        Title="PatientMain" Height="1024" Width="920">
+﻿<Page x:Class="Clinics.Pages.RecordedPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Clinics.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1024" d:DesignWidth="920"
+      Title="RecordedPage">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
@@ -61,31 +63,33 @@
             <!--#FF58C755-->
         </StackPanel>
 
+
         <StackPanel Grid.Column="1">
             <!--А вот тут нужно базу-->
-            <TextBlock Text="Оформить запись"
+            <TextBlock Text="Составленные записи"
                        FontSize="30"
                        Margin="5"
                        Foreground="#8D8686"/>
-            <Button x:Name="btnRegisterOffer1"
+            <Button x:Name="btnRecorded1"
                     Style="{DynamicResource RoundedBtn}"
                     Width="640"
                     Height="100"
                     Margin="20"
-                    Content="Дежурный врач"
-                    Click="btnRegisterOffer1_Click"/>
-            <Button x:Name="btnRegisterOffer2"
+                    Content="Test 1"
+                    Click="btnRecorded1_Click"/>
+            <Button x:Name="btnRecorded2"
                     Style="{DynamicResource RoundedBtn}"
                     Width="640"
                     Height="100"
-                    Content="Дежурный врач"
-                    Click="btnRegisterOffer2_Click"/>
-            <Button x:Name="btnRegisterOffer3"
+                    Content="test 2"
+                    Click="btnRecorded2_Click"/>
+            <Button x:Name="btnRecorded3"
                     Style="{DynamicResource RoundedBtn}"
                     Width="640"
                     Height="100"
-                    Content="Дежурный грач"
-                    Margin="20"/>
+                    Content="test 3"
+                    Margin="20"
+                    Click="btnRecorded3_Click"/>
         </StackPanel>
     </Grid>
-</Window>
+</Page>

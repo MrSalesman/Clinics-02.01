@@ -7,10 +7,6 @@
         mc:Ignorable="d"
         Title="StaffAuthWindow" Height="1024" Width="920">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="140"/>
-            <ColumnDefinition Width="740"/>
-        </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -34,7 +30,7 @@
                      BorderBrush="#FF58C755" 
                      BorderThickness="1.5"/>
         </StackPanel>
-        <Button x:Name="btnAuthBack" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Назад"  Width="140" Background="White" Foreground="#FF58C755" BorderBrush="#FF58C755" Height="27" FontSize="14"/>
+        <Button x:Name="btnAuthBack" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Назад"  Width="160" Height="40" Background="White" Foreground="#FF58C755" BorderBrush="#FF58C755" FontSize="14"/>
 
         <Button x:Name="btnAurhEnter"
                 Grid.Column="1"

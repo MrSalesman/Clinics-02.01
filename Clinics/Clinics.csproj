@@ -64,6 +64,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\MedicalCardPage.xaml.cs">
+      <DependentUpon>MedicalCardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RecordedPage.xaml.cs">
+      <DependentUpon>RecordedPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\PatientMain.xaml.cs">
       <DependentUpon>PatientMain.xaml</DependentUpon>
     </Compile>
@@ -76,6 +82,14 @@
     <Compile Include="Windows\StaffDoctor.xaml.cs">
       <DependentUpon>StaffDoctor.xaml</DependentUpon>
     </Compile>
+    <Page Include="Pages\MedicalCardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RecordedPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AuthWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -1,19 +1,21 @@
-﻿<Window x:Class="Clinics.Windows.PatientMain"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Clinics.Windows"
-        mc:Ignorable="d"
-        Title="PatientMain" Height="1024" Width="920">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+﻿<Page x:Class="Clinics.Pages.MedicalCardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Clinics.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1024" d:DesignWidth="920"
+      Title="MedicalCardPage">
 
-        <StackPanel Grid.Column="0" Background="#FF58C755">
-            <Button x:Name="btnMenuBack"
+    <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Background="#FF58C755">
+                <Button x:Name="btnMenuBack"
                     Height="30"
                     Background="White"
                     Foreground="#FF58C755"
@@ -22,7 +24,7 @@
                     FontSize="14"
                     Click="btnRecording_Click"
                     BorderThickness="0.3"/>
-            <Button x:Name="btnRecording"
+                <Button x:Name="btnRecording"
                     Height="30"
                     Background="#FF58C755"
                     Foreground="White"
@@ -31,7 +33,7 @@
                     FontSize="14"
                     Click="btnRecording_Click"
                     BorderThickness="0.3"/>
-            <Button x:Name="btnRecordingData"
+                <Button x:Name="btnRecordingData"
                     Height="30"
                     Background="#FF58C755"
                     Foreground="White"
@@ -40,7 +42,7 @@
                     FontSize="14"
                     Click="btnRecordingData_Click"
                     BorderThickness="0.3"/>
-            <Button x:Name="btnMedicalCard"
+                <Button x:Name="btnMedicalCard"
                     Height="30"
                     Background="#FF58C755"
                     BorderBrush="White"
@@ -49,7 +51,7 @@
                     FontSize="14"
                     Click="btnMedicalCard_Click"
                     BorderThickness="0.3"/>
-            <Button x:Name="btnPMExit"
+                <Button x:Name="btnPMExit"
                     Height="30"
                     Background="#FF58C755"
                     BorderBrush="White"
@@ -58,34 +60,34 @@
                     FontSize="14"
                     Click="btnPMExit_Click"
                     BorderThickness="0.3"/>
-            <!--#FF58C755-->
-        </StackPanel>
+            </StackPanel>
 
         <StackPanel Grid.Column="1">
             <!--А вот тут нужно базу-->
-            <TextBlock Text="Оформить запись"
+            <TextBlock Text="Медицинская карта"
                        FontSize="30"
                        Margin="5"
                        Foreground="#8D8686"/>
-            <Button x:Name="btnRegisterOffer1"
+            <Button x:Name="btnPrescript"
                     Style="{DynamicResource RoundedBtn}"
                     Width="640"
                     Height="100"
                     Margin="20"
-                    Content="Дежурный врач"
-                    Click="btnRegisterOffer1_Click"/>
-            <Button x:Name="btnRegisterOffer2"
+                    Content="Рецепты"
+                    Click="btnPrescript_Click"/>
+            <Button x:Name="btnConclusion"
                     Style="{DynamicResource RoundedBtn}"
                     Width="640"
                     Height="100"
-                    Content="Дежурный врач"
-                    Click="btnRegisterOffer2_Click"/>
-            <Button x:Name="btnRegisterOffer3"
+                    Content="Заключения"
+                    Click="btnConclusion_Click"/>
+            <Button x:Name="btnTie"
                     Style="{DynamicResource RoundedBtn}"
                     Width="640"
                     Height="100"
-                    Content="Дежурный грач"
-                    Margin="20"/>
+                    Content="Привязка к поликлинике"
+                    Margin="20"
+                    Click="btnTie_Click"/>
         </StackPanel>
     </Grid>
-</Window>
+</Page>
