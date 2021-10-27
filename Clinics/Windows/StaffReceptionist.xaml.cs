@@ -15,28 +15,13 @@ using System.Windows.Shapes;
 namespace Clinics.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для StaffDoctor.xaml
+    /// Логика взаимодействия для StaffReceptionist.xaml
     /// </summary>
-    public partial class StaffDoctor : Window
+    public partial class StaffReceptionist : Window
     {
-        public StaffDoctor()
+        public StaffReceptionist()
         {
             InitializeComponent();
-        }
-
-        private void btnRecordsDoctor_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnRecordingsSchedule_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void DoctorLogout_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

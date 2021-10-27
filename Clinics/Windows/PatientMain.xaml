@@ -12,6 +12,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <!--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-->
+
         <StackPanel Grid.Column="0" Background="#FF58C755">
             <Button x:Name="btnMenuBack"
                     Height="30"
@@ -36,7 +38,7 @@
                     Background="#FF58C755"
                     Foreground="White"
                     BorderBrush="White"
-                    Content="Оформенные записи"
+                    Content="Оформленные записи"
                     FontSize="14"
                     Click="btnRecordingData_Click"
                     BorderThickness="0.3"/>

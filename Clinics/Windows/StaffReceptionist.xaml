@@ -1,17 +1,17 @@
-﻿<Window x:Class="Clinics.Windows.StaffDoctor"
+﻿<Window x:Class="Clinics.Windows.StaffReceptionist"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clinics.Windows"
         mc:Ignorable="d"
-        Title="StaffDoctor" Height="1024" Width="980">
+        Title="StaffReceptionist" Height="1024" Width="920">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
         <StackPanel Grid.Column="0" Background="#FF58C755">
             <Button x:Name="btnMenuBack"
                     Height="30"
@@ -22,60 +22,48 @@
                     FontSize="14"
                     Click="btnRecording_Click"
                     BorderThickness="0.3"/>
-            <Button x:Name="btnRecordsDoctor"
+            <Button x:Name="btnRecording"
                     Height="30"
                     Background="#FF58C755"
                     Foreground="White"
-                    Content="Записи на сегодня"
+                    Content="Записать пользователя"
                     BorderBrush="White"
                     FontSize="14"
-                    BorderThickness="0.3"
-                    Click="btnRecordsDoctor_Click"/>
-            <Button x:Name="btnRecordingsSchedule"
-                    Height="30"
-                    Background="#FF58C755"
-                    Foreground="White"
-                    BorderBrush="White"
-                    Content="Записи на месяц"
-                    FontSize="14"
-                    BorderThickness="0.3"
-                    Click="btnRecordingsSchedule_Click"/>
-            <Button x:Name="DoctorLogout"
+                    Click="btnRecording_Click"
+                    BorderThickness="0.3"/>
+            <Button x:Name="btnRecordingData"
                     Height="30"
                     Background="#FF58C755"
                     Foreground="White"
                     BorderBrush="White"
-                    Content="Выйти"
+                    Content="Оформенные записи"
                     FontSize="14"
-                    BorderThickness="0.3"
-                    Click="DoctorLogout_Click"/>
+                    Click="btnRecordingData_Click"
+                    BorderThickness="0.3"/>
+            <Button x:Name="btnMedicalCard"
+                    Height="30"
+                    Background="#FF58C755"
+                    BorderBrush="White"
+                    Foreground="White"
+                    Content="Медицинская карта"
+                    FontSize="14"
+                    Click="btnMedicalCard_Click"
+                    BorderThickness="0.3"/>
+            <Button x:Name="btnPMExit"
+                    Height="30"
+                    Background="#FF58C755"
+                    BorderBrush="White"
+                    Foreground="White"
+                    Content="Выйти из профиля"
+                    FontSize="14"
+                    Click="btnPMExit_Click"
+                    BorderThickness="0.3"/>
             <!--#FF58C755-->
         </StackPanel>
 
-
         <StackPanel Grid.Column="1">
-            <!--А вот тут нужно базу-->
-            <TextBlock Text="Записи на сегодня"
-                       FontSize="30"
-                       Margin="5"
-                       Foreground="#8D8686"/>
-            <Button x:Name="btnRecordsD1"
-                    Style="{DynamicResource RoundedBtn}"
-                    Width="640"
-                    Height="100"
-                    Margin="20"
-                    Content="t1"/>
-            <Button x:Name="btnRecordsD2"
-                    Style="{DynamicResource RoundedBtn}"
-                    Width="640"
-                    Height="100"
-                    Content="t2"/>
-            <Button x:Name="btnRecordsD3"
-                    Style="{DynamicResource RoundedBtn}"
-                    Width="640"
-                    Height="100"
-                    Content="t3"
-                    Margin="20"/>
+            
         </StackPanel>
+
     </Grid>
 </Window>

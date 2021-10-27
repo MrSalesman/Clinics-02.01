@@ -82,6 +82,9 @@
     <Compile Include="Windows\StaffDoctor.xaml.cs">
       <DependentUpon>StaffDoctor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\StaffReceptionist.xaml.cs">
+      <DependentUpon>StaffReceptionist.xaml</DependentUpon>
+    </Compile>
     <Page Include="Pages\MedicalCardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -119,6 +122,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\StaffDoctor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\StaffReceptionist.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
