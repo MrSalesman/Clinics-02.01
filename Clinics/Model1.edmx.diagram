@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d362f53567d648749cb92a9e8cd719f1" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Cabinet" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CabinetSpecialty" Width="1.5" PointX="1.5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Card" Width="1.5" PointX="6" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Clinic" Width="1.5" PointX="3.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.IDRecordList" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Insurance" Width="1.5" PointX="3.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.InsuranceCompany" Width="1.5" PointX="1.5" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Patient" Width="1.5" PointX="3.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Prescript" Width="1.5" PointX="8.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Record" Width="1.5" PointX="11.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Role" Width="1.5" PointX="3.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Specialty" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Staff" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Cabinet_CabinetSpecialty" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_IDRecordList_Cabinet" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Record_Cabinet" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Card_Clinic" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Card_Insurance" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Card_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Prescript_Card" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Record_Card" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_IDRecordList_Specialty" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_IDRecordList_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Insurance_InsuranceCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Prescript_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Record_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Staff_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Staff_Specialty" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

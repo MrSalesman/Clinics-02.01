@@ -107,12 +107,60 @@
         </Style>
     </Window.Resources>
     <Grid Margin="0,0,-0.444,-0.111">
-        <Button Content="Авторизация сотрудника" HorizontalAlignment="Left" Margin="0,32,0,0" VerticalAlignment="Top" Width="230" Height="39" BorderBrush="#FF58C755" Background="#FF58C755" Foreground="White" FontSize="14" Style="{DynamicResource PanelBtnStyle}"/>
-        <Button Content="Войти" HorizontalAlignment="Left" Margin="352,587,0,0" VerticalAlignment="Top" Width="389" Height="54" MinWidth="389" MinHeight="54" Style="{DynamicResource RoundedBtn}" Foreground="White" Background="#FF58C755"/>
-        <Label Content="" HorizontalAlignment="Left" Margin="0,71,0,-0.111" VerticalAlignment="Top" Height="926" Width="230" Background="#FF58C755"/>
-        <TextBox HorizontalAlignment="Left" Height="70" Margin="335,459,0,0" TextWrapping="Wrap" Text="Приложите страховой полис к валидатору, либо введите его номер." VerticalAlignment="Top" Width="444" FontSize="24" BorderThickness="0" Foreground="#58C755"/>
+        
+        <Button x:Name="StaffAuthorisationEnter"
+                Content="Авторизация сотрудника" 
+                HorizontalAlignment="Left" 
+                Margin="0,32,0,0" 
+                VerticalAlignment="Top" 
+                Width="230" Height="39" 
+                BorderBrush="#FF58C755" 
+                Background="#FF58C755" 
+                Foreground="White" 
+                FontSize="14" 
+                Style="{DynamicResource PanelBtnStyle}"
+                Click="StaffAuthorisationEnter_Click"/>
+        
+        <Button x:Name="UserLogInButton"
+                Content="Войти" 
+                HorizontalAlignment="Left" 
+                Margin="352,587,0,0" 
+                VerticalAlignment="Top" 
+                Width="389" Height="54" 
+                MinWidth="389" MinHeight="54" 
+                Style="{DynamicResource RoundedBtn}" 
+                Foreground="White" 
+                Background="#FF58C755"
+                Click="UserLogInButton_Click"/>
+        
+        <Label Content="" 
+               HorizontalAlignment="Left" 
+               Margin="0,71,0,-0.111" 
+               VerticalAlignment="Top" 
+               Height="926" Width="230" 
+               Background="#FF58C755"/>
+        
+        <TextBox HorizontalAlignment="Left" 
+                 Height="70" Margin="335,459,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="Приложите страховой полис к валидатору, либо введите его номер." 
+                 VerticalAlignment="Top" 
+                 Width="444" 
+                 FontSize="24" 
+                 BorderThickness="0" 
+                 Foreground="#58C755"/>
+        
         <Image Margin="388,190,207,543" Source="/Clinics;component/Logo.jpg" Stretch="Fill"/>
-        <TextBox HorizontalAlignment="Left" Height="35" Margin="352,534,0,0" TextWrapping="Wrap" Text="0000-0000-0000-0000" FontSize="24" VerticalAlignment="Top" Width="389" BorderBrush="#FF58C755"/>
+        
+        <TextBox HorizontalAlignment="Left" 
+                 Height="35" 
+                 Margin="352,534,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="0000-0000-0000-0000" 
+                 FontSize="24" 
+                 VerticalAlignment="Top" 
+                 Width="389" 
+                 BorderBrush="#FF58C755"/>
     </Grid>
 
 </Window>

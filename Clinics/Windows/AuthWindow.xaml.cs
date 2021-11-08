@@ -24,5 +24,16 @@ namespace Clinics
         {
             InitializeComponent();
         }
+
+        private void UserLogInButton_Click(object sender, RoutedEventArgs e)
+        {
+            AuthWindow authWindow = new AuthWindow();
+            Visibility = Visibility.Hidden;
+        }
+
+        private void StaffAuthorisationEnter_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
